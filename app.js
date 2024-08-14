@@ -8,7 +8,7 @@ if (dificuldade == 'hard' || dificuldade == 'Hard' || dificuldade == 'HARD') {
 } else { 
     if (dificuldade == 'medium' || dificuldade == 'Medium' || dificuldade == 'MEDIUM') {
     tamanhoJogo = 100;
-    { else {
+    } else {
         tamanhoJogo = 10;
     }
     }
