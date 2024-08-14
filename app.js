@@ -1,4 +1,13 @@
 let listaNumerosSorteados = [];
+let tamanhoJogo = 0;
+
+let dificuldade = prompt('Digite a dificuldade: Easy / Hard');
+
+if (dificuldade == 'hard' || dificuldade == 'Hard' || dificuldade == 'HARD') {
+    tamanhoJogo = 100;
+} else {
+    tamanhoJogo = 10;
+}
 
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
@@ -59,7 +68,6 @@ function exibirMensagemInicial() {
     exibirTextoNaTela('p', `Escolha um número entre 1 e ${tamanhoJogo}`);
 }
 
-let tamanhoJogo = 100;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 let chute = 0;
