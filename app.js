@@ -1,12 +1,17 @@
 let listaNumerosSorteados = [];
 let tamanhoJogo = 0;
 
-let dificuldade = prompt('Digite a dificuldade: Easy / Hard');
+let dificuldade = prompt('Digite a dificuldade: Easy / Medium / Hard');
 
 if (dificuldade == 'hard' || dificuldade == 'Hard' || dificuldade == 'HARD') {
+    tamanhoJogo = 1000;
+} else { 
+    if (dificuldade == 'medium' || dificuldade == 'Medium' || dificuldade == 'MEDIUM') {
     tamanhoJogo = 100;
-} else {
-    tamanhoJogo = 10;
+    { else {
+        tamanhoJogo = 10;
+    }
+    }
 }
 
 function exibirTextoNaTela(tag, texto) {
