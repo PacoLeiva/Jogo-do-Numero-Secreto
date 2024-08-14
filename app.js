@@ -11,8 +11,8 @@ if (dificuldade == 'hard' || dificuldade == 'Hard' || dificuldade == 'HARD') {
     } else {
         tamanhoJogo = 10;
     }
-    }
 }
+
 
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
